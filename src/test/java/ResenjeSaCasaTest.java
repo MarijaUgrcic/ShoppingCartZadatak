@@ -30,6 +30,8 @@ public class ResenjeSaCasaTest {
     By goToBasket = By.cssSelector(".ico-cart .cart-label");
     By valueOfEachElement = By.cssSelector(".product-subtotal");
     By totalValueElement = By.xpath("//span[text()='Sub-Total:']/../following-sibling::td/span/span");
+    // Shipping //span[contains(text(),'Shipping:')]/../following-sibling::td/span/span
+    // Tax //span[contains(text(),'Tax:')]/../following-sibling::td/span/span
 
 
     public WebElement getElement(By locator) {
