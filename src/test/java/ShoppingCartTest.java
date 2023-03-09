@@ -28,7 +28,7 @@ public class ShoppingCartTest {
     By product3 = By.cssSelector("input[onclick*=\"AjaxCart.addproducttocart_catalog('/addproducttocart/catalog/22/1/1\"]");
     By shoppingCartLink = By.cssSelector("p[class='content'] a[href='/cart']");
     By valueOfEachElement = By.cssSelector(".product-subtotal");
-    By totalValueElement = By.cssSelector(".nobr .product-price");
+    By totalValueElement = By.xpath("//span[text()='Sub-Total:']/../following-sibling::td/span/span");
 
     public WebElement getElement(By locator) {
         return wait.until(ExpectedConditions.presenceOfElementLocated(locator));

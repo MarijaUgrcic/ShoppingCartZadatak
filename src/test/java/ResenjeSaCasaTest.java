@@ -29,7 +29,7 @@ public class ResenjeSaCasaTest {
     By headerMenuBooks = By.xpath("//ul[@class='top-menu']//a[contains(text(),'Books')]");
     By goToBasket = By.cssSelector(".ico-cart .cart-label");
     By valueOfEachElement = By.cssSelector(".product-subtotal");
-    By totalValueElement = By.cssSelector(".nobr .product-price");
+    By totalValueElement = By.xpath("//span[text()='Sub-Total:']/../following-sibling::td/span/span");
 
 
     public WebElement getElement(By locator) {
